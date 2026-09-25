@@ -52,6 +52,20 @@ The APK has no Android `INTERNET` permission. Chat generation and voice transcri
 
 The app includes deterministic checks for some urgent phrases and directs users toward human support. The language model is not relied on by itself to detect emergencies, diagnose, or claim that anyone has been contacted. Model responses can still be incomplete or mistaken.
 
+## Admin web prototype
+
+`SAMVED_Admin_Web/` contains a separate local-first dashboard prototype for reviewing fictional wellbeing indicators, support priorities, check-in summaries, and simulated training-camp observations. It has no live camera, model, SAMVED app, account, or data-service connection. All people and wellbeing data shown are fictional.
+
+The web app uses Next.js 16, React 19, TypeScript, Tailwind CSS 4, and `lucide-react`. It can be run locally with Node.js 20.9+ and npm 10+:
+
+```bash
+cd SAMVED_Admin_Web
+npm ci
+npm run dev
+```
+
+See [`SAMVED_Admin_Web/README.md`](SAMVED_Admin_Web/README.md) for routes, static export, demo data, and deployment notes.
+
 ## Project status
 
-This project package is ready for publication under your GitHub account. See `GITHUB_UPLOAD_GUIDE.md` for steps to create the repository and publish the APK as a release asset. The APK embeds the application, model assets, and third-party notices. The separately developed SAMVED admin desktop app is not part of this repository or APK.
+This repository contains the Android APK release and the admin web prototype source. The APK embeds the Android application, model assets, and third-party notices. The separately developed SAMVED admin desktop app is not part of this repository or APK.

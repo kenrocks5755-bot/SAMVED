@@ -1,1 +1,9 @@
 *.apk
+**/node_modules/
+**/.next/
+**/out/
+**/*.tsbuildinfo
+**/.env*
+!**/.env.example
+**/AGENTS.md
+**/CLAUDE.md
